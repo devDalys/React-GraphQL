@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="040368e1-6f75-4053-a73a-b727c5b05e33" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/mutation/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Testovoe/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Testovoe/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/query/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/query/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1648625314851</updated>
       <workItem from="1648625318271" duration="210000" />
-      <workItem from="1648625563796" duration="21084000" />
+      <workItem from="1648625563796" duration="26122000" />
     </task>
     <servers />
   </component>
