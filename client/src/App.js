@@ -1,15 +1,22 @@
 import './App.css';
 import {useEffect, useState} from "react";
-import {useQuery} from "@apollo/client";
-import {GET_ALL_USERS} from "./query/user";
+import {useQuery,gql} from "@apollo/client";
+import {GET_ALL_USERS, GET_ONE_USER} from "./query/user";
 
 function App() {
-    const {loading, error, data} = useQuery(GET_ALL_USERS)
-    console.log(data);
+    const {data, loading, error} = useQuery(gql`
+    query {
+      getAllUsers {
+        id
+        username
+        age
+      }
+}
+`)
     const [users, setUsers] = useState([]);
-    useEffect(() => {
-
-    },[data])
+    console.log(data,loading,error);
+    // useEffect(() => {
+    // },[data])
     return (
         <div className="App">
             <form>
