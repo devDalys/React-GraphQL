@@ -6,11 +6,16 @@ import {GET_ALL_USERS, GET_ONE_USER} from "./query/user";
 import {CREATE_USER} from "./mutation/user";
 
 function App() {
-    const {data, loading, error} = useQuery(GET_ALL_USERS)
+    const {data, loading, error,refetch} = useQuery(GET_ALL_USERS)
     const [users, setUsers] = useState([]);
     const [username, setUsername] = useState('');
     const [age, setAge] = useState(0);
     const [newUser] = useMutation(CREATE_USER);
+    const getAll = (e) => {
+        e.preventDefault();
+        refetch();
+
+    }
     const addUser = (e) => {
         e.preventDefault();
         newUser({
@@ -40,7 +45,9 @@ function App() {
                         addUser(event);
                     }}>Создать
                     </button>
-                    <button>Получить</button>
+                    <button onClick={(e) => {
+                        getAll(e);
+                    }}>Получить</button>
                 </div>
 
             </form>
